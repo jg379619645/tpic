@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	    <meta http-equiv="Cache-Control" content="no-cache"/>
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>图片保存</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="js/jquery-3.1.0.min.js" ></script>
+		<script>
+			$(function(){
+
+			   function touchend(e){
+			        var dataImg = 'img/d_01.jpg';
+			        save.setAttribute('href',dataImg);
+			        console.log(dataImg);
+			    }
+
+			});
+		</script>
+	</head>
+	<body>
+		<div class="demo"><a href="javascript:void(0)" id="save" download="tupian"><img src="img/d_01.jpg"></a></div>
+	</body>
+</html>
