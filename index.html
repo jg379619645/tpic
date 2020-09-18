@@ -1,27 +1,59 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
-		<meta charset="utf-8">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	    <meta http-equiv="Cache-Control" content="no-cache"/>
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<title>图片保存</title>
-		<link rel="stylesheet" href="css/style.css" />
-		<script type="text/javascript" src="js/jquery-3.1.0.min.js" ></script>
-		<script>
-			$(function(){
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="assets/style.css">
+		<title>Hammer.js</title>
 
-			   function touchend(e){
-			        var dataImg = 'img/d_01.jpg';
-			        save.setAttribute('href',dataImg);
-			        console.log(dataImg);
-			    }
-
-			});
-		</script>
+		<style>
+			html,
+			body {
+				overflow: hidden;
+				margin: 0;
+			}
+			
+			body {
+				-webkit-perspective: 500;
+				-moz-perspective: 500;
+				perspective: 500;
+			}
+			
+			.animate {
+				-webkit-transition: all .3s;
+				-moz-transition: all .3s;
+				transition: all .3s;
+			}
+			
+			#hit {
+				padding: 10px;
+			}
+			
+			#log {
+				position: absolute;
+				padding: 10px;
+			}
+			#pits{
+				width: 80%;
+				height: 80%;
+				margin: 0 auto;
+				background: #9FE1E7;
+			}
+		</style>
 	</head>
+
 	<body>
-		<div class="demo"><a href="javascript:void(0)" id="save" download="tupian"><img src="img/d_01.jpg"></a></div>
+
+		<div id="log"></div>
+		<div id="pits">
+			<img id="img3"  class="img3" src="1.png" />
+			<img id="img4"  class="img3" src="1.png" />
+		</div>
+		<a href="index2.html"></a>
+		<script type="text/javascript" src="hammer.min.js"></script>
+		<script type="text/javascript" src="imgScale.js"></script>
+		<!--<script type="text/javascript" src="http://hammerjs.github.io/dist/hammer.min.js"></script>-->
 	</body>
+
 </html>
